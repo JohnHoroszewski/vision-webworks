@@ -1,0 +1,83 @@
+.site-footer {
+
+    a:hover {
+        color: $lightest;
+
+        & > svg {
+            color: $lightest;
+        }
+    }
+}
+
+.top-footer {
+    background-color: $dkgray;
+    color: $lightest;
+    padding: 20px 0;
+
+    a {
+        color: $ltgray;
+    }
+
+    .textwidget {
+
+        p {
+            margin: 0 0 10px 0;
+        }
+    }
+}
+
+.cfrp-footer-excerpt {
+
+    p {
+        margin: 0 0 10px 0;
+    }
+}
+
+.bottom-footer {
+    background-color: $accent;
+    color: $lightest;
+    overflow: hidden;
+    padding: 10px 0;
+    text-align: center;
+
+    a {
+        color: $lightest;
+    }
+
+    .bf-links {
+        
+        div {
+            display: inline-block;
+
+            &:after {
+                color: $dkgray;
+                content: '|';
+                margin: 0 5px 0 0;
+                padding: 0 0 0 5px;
+            }
+
+            &:last-of-type:after {
+                content: '';
+                display: none;
+            }
+        }
+    }
+}
+
+.subscribe {
+    position: relative;
+
+    button[type=submit] {
+        background-color: $accent;
+        color: $lightest;
+        height: 40px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 40px;
+
+        .fa-check {
+            font-size: 20px;
+        }
+    }
+}

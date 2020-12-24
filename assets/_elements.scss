@@ -1,0 +1,36 @@
+body {
+    background-attachment: fixed;
+    background-image: url( 'images/geometry.png' );
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $heading;
+    letter-spacing: 0.075rem;
+    line-height: 1.25em;
+    margin: 0 0 1rem 0;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+h4 {
+    font-weight: 500;
+}
+
+input {
+    height: 40px;
+    padding: 5px 15px;
+    width: 100%;
+}
+
+textarea {
+    padding: 5px 15px;
+}
+
+select {
+    height: 40px;
+    padding: 5px 15px;
+}
