@@ -26,7 +26,9 @@ get_header(); ?>
                                 <div class="slide-text-wrapper">
                                     <h2><?php the_sub_field( 'slide_heading' ); ?></h2>
                                     <div class="slide-text">
-                                        <?php the_sub_field( 'slide_content' ); ?>
+                                        <div class="text">
+                                            <?php the_sub_field( 'slide_content' ); ?>
+                                        </div>
                                         <?php if ( get_sub_field( 'slide_cta_text' ) ) : ?>
                                             <a class="<?php the_sub_field( 'slide_cta_color' ); ?> <?php the_sub_field( 'slide_cta_style' ); ?> btn-md" href="<?php the_sub_field( 'slide_cta_url' ); ?>"><?php the_sub_field( 'slide_cta_text' ); ?></a>
                                         <?php endif; ?>
@@ -57,7 +59,7 @@ get_header(); ?>
                 <div class="constrain">
 
                     <?php
-                        query_posts( array( 'post_type' => 'service', 'orderby' => 'menu_order', 'showposts' => -1 ) ); ?>
+                        query_posts( array( 'post__not_in' => array(155), 'post_type' => 'service', 'orderby' => 'menu_order', 'showposts' => -1 ) ); ?>
                         <?php while ( have_posts() ) : the_post(); ?>
 
                             <div class="service-item flexxed">
@@ -65,7 +67,7 @@ get_header(); ?>
                                     <div class="service-content">
                                         <h2><?php the_title(); ?></h2>
                                         <?php the_excerpt(); ?>
-                                        <a class="btn-lg accent-bg" href="<?php the_permalink(); ?>">Read More</a>
+                                        <a class="btn-lg accent2-bg" href="<?php the_permalink(); ?>">Read More</a>
                                     </div>
                                 </div>
                                 <div class="service-image">
@@ -120,7 +122,7 @@ get_header(); ?>
                         <div class="cta-snippet">
                             <?php echo get_theme_mod( 'theme_cta_button_snippet' ); ?>
                         </div>
-                        <a class="accent-bg btn-md" href="<?php echo get_theme_mod( 'theme_cta_button_url' ); ?>">
+                        <a class="accent2-bg btn-md" href="<?php echo get_theme_mod( 'theme_cta_button_url' ); ?>">
                             <?php echo get_theme_mod( 'theme_cta_button_text' ); ?>
                         </a>
                     </div>

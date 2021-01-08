@@ -34,7 +34,7 @@
         <div class="constrain">
 
             <?php
-                query_posts( array( 'post_type' => 'service', 'orderby' => 'menu_order', 'showposts' => -1 ) ); ?>
+                query_posts( array( 'post__not_in' => array(155), 'post_type' => 'service', 'orderby' => 'menu_order', 'showposts' => -1 ) ); ?>
                 <?php while ( have_posts() ) : the_post(); ?>
 
                     <div class="service-item flexxed">

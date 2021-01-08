@@ -67,6 +67,11 @@ a.accent-text {
     color: $accent;
 }
 
+.accent2-text,
+a.accent2-text {
+    color: $accent2;
+}
+
 .ltgray-text,
 a.ltgray-text {
     color: $ltgray;
@@ -90,6 +95,11 @@ a.white-text {
 .accent-bg,
 a.accent-bg {
     background-color: $accent;
+}
+
+.accent2-bg,
+a.accent2-bg {
+    background-color: $accent2;
 }
 
 .white-bg,

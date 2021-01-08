@@ -30,8 +30,8 @@
 			<div class="constrain">
 			
 				<div class="header-contact">
-					<a class="ltgray-text" href="tel:<?php echo get_theme_mod( 'theme_company_phone' ); ?>"><i class="accent-text fa fa-phone"></i> Call Us</a>
-					<a class="ltgray-text" href="mailto:contact@visionwebworks.com"><i class="accent-text fa fa-envelope"></i> Email Us</a>
+					<a class="ltgray-text" href="tel:<?php echo get_theme_mod( 'theme_company_phone' ); ?>"><i class="accent2-text fa fa-phone"></i> Call Us</a>
+					<a class="ltgray-text" href="mailto:contact@visionwebworks.com"><i class="accent2-text fa fa-envelope"></i> Email Us</a>
 				</div>
 
 				<div id="header-connect" class="header-connect">

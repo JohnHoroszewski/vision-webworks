@@ -1,10 +1,10 @@
 .site-footer {
 
     a:hover {
-        color: $lightest;
+        color: $accent2;
 
         & > svg {
-            color: $lightest;
+            color: $accent2;
         }
     }
 }
