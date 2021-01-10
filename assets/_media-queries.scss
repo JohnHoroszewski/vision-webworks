@@ -7,10 +7,23 @@
             font-size: 36px;
         }
     }
+
+    .slick-next,
+    .slick-prev {
+        top: 22%;
+    }
+
+    .page-template-homepage .intro-block {
+        margin: initial;
+    }
+
+    .intro-block {
+        margin: -50px 0 0 0;
+    }
 }
 
 @media only screen and ( min-width: 568px ) {
-
+ 
     // CLASSES
     .big-title {
         font-size: 34px;
@@ -164,7 +177,6 @@
     }
 
     // HOMEPAGE
-    .service-image,
     .client-image {
         height: 250px;
     }
@@ -225,25 +237,7 @@
     }
     
     // PAGE INTRO
-    .page-template-homepage {
-
-        .page-intro {
-            margin: 0 0 -45px 0;
-        }
-     }
-
     .page-intro {
-        margin: 0 0 -95px 0;
-
-        .constrain {
-            position: relative;
-        }
-
-        .intro-block {
-            padding: 25px;
-            position: relative;
-            top: -45px;
-        }
 
         .intro-text {
             -webkit-column-count: 2;
@@ -319,7 +313,6 @@
         }
     }
 
-    .service-item,
     .client-item {
 
         &.flexxed {
@@ -337,12 +330,10 @@
         } 
     }
 
-    .service-content-container,
     .client-content-container {
         width: 50%;
     }
 
-    .service-image,
     .client-image {
         height: initial;
         position: relative;
@@ -638,21 +629,6 @@
         .services-text {
             width: 50%;
         }
-
-        .services-image {
-            overflow: hidden;
-            position: relative;
-            width: 50%;
-
-            img {
-                height: auto;
-                left: 50%;
-                margin: 0 auto;
-                max-width: none;
-                position: absolute;
-                transform: translateX( -50% );
-            }
-        }
     }
 }
 
@@ -801,7 +777,6 @@
         }
     }
 
-    .service-content-container,
     .client-content-container {
         
         h2 {
@@ -810,13 +785,6 @@
 
         p {
             margin: 0 0 30px 0;
-        }
-    }
-
-    .service-image {
-
-        img {
-            height: 500px;
         }
     }
 
@@ -934,15 +902,7 @@
     }
 
      // PAGE INTRO
-     .page-template-homepage {
-
-        .page-intro {
-            margin: 0 0 -105px 0;
-        }
-     }
-
      .page-intro {
-        margin: 0 0 -125px 0;
 
         .flexxed {
             -webkit-box-orient: horizontal;
@@ -956,7 +916,6 @@
 
         .intro-block {
             padding: 35px;
-            top: -105px;
 
             h2 {
                 width: 31%;
@@ -978,7 +937,6 @@
     } 
     
     // HOMEPAGE
-    .service-content-container,
     .client-content-container {
         padding: 50px;
 
@@ -1131,7 +1089,6 @@
     }
 
     // HOMEPAGE
-    .service-content-container,
     .client-content-container {
 
         h2 {
@@ -1168,19 +1125,11 @@
     }
 
     // PAGE INTRO
-    .page-template-homepage {
-
-        .page-intro {
-            margin: 0 0 -125px 0;
-        }
-     }
 
     .page-intro {
-        margin: 0 0 -175px 0;
 
         .intro-block {
             padding: 50px;
-            top: -125px;
         }
     }
 

@@ -54,7 +54,7 @@
     color: $lightest;
 
     .intro-block {
-        background-image: url( 'images/geometry-ltblue.png' );
+        background-color: $dkaccent;
         padding: 20px 10px;
     }
 
@@ -195,7 +195,14 @@
     }
 }
 
-.service-item,
+.page-template-homepage {
+    
+    .service-content-container {
+        background: $accent;
+        margin: 20px 0 0 0;
+    }
+}
+
 .client-item {
     background-color: $dkgray;
     color: $lightest;
@@ -208,7 +215,6 @@
     }
 }
 
-.service-content-container,
 .client-content-container {
     padding: 20px;
     text-align: center;
@@ -218,7 +224,6 @@
     }
 }
 
-.service-image,
 .client-image {
     display: block;
     height: 150px;
@@ -233,7 +238,7 @@
 }
 
 .industry-block {
-    background-image: url( 'images/gray-geometry-bg.png' );
+    background-color: $dkaccent;
     color: $lightest;
     padding: 20px 10px;
 }

@@ -42,19 +42,6 @@ get_header(); ?>
 
             </section><!-- .slider -->
 
-            <section class="page-intro p35">
-                <div class="constrain">
-                    <div class="intro-block flexxed">
-                        <h2>
-                            <?php the_field( 'intro_title' ); ?>
-                        </h2>
-                        <div class="intro-text">
-                            <?php the_field( 'intro_text' ); ?>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
             <section class="services-list p35">
                 <div class="constrain">
 
@@ -79,6 +66,19 @@ get_header(); ?>
                     <?php wp_reset_query(); ?>
                 </div><!-- .constrain -->
             </section><!-- .services-list -->
+
+            <section class="page-intro p35">
+                <div class="constrain">
+                    <div class="intro-block flexxed">
+                        <h2>
+                            <?php the_field( 'intro_title' ); ?>
+                        </h2>
+                        <div class="intro-text">
+                            <?php the_field( 'intro_text' ); ?>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
             <section class="recent-work p35">
                 <div class="constrain">
