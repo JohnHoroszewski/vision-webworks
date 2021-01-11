@@ -20,6 +20,40 @@
     .intro-block {
         margin: -50px 0 0 0;
     }
+
+    .page-template-homepage {
+
+        .service-content-container {
+            min-height: 585px;
+            position: relative;
+
+            a {
+                bottom: 20px;
+                left: 50%;
+                min-width: 180px;
+                position: absolute;
+                transform: translateX( -50% );
+            }
+        }
+    }
+
+    .services-list {
+
+        .constrain {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .service-item {
+            width: 48.5%;
+
+            h2 {
+                font-size: 20px;
+            }
+        }
+    }
 }
 
 @media only screen and ( min-width: 568px ) {
@@ -98,6 +132,13 @@
                     column-count: 2;
             -webkit-column-gap: 40px;
                     column-gap: 40px;
+        }
+    }
+
+    .page-template-homepage {
+
+        .service-content-container {
+            min-height: 530px;
         }
     }
 
@@ -180,6 +221,13 @@
     .client-image {
         height: 250px;
     }
+
+    .page-template-homepage {
+
+        .service-content-container {
+            min-height: 480px;
+        }
+    }
 }
 
 @media only screen and ( min-width: 768px ) {
@@ -190,6 +238,11 @@
                 column-count: 2;
         -webkit-column-gap: 70px;
                 column-gap: 70px;
+    }
+
+    .slick-next,
+    .slick-prev {
+        top: 50%;
     }
 
     // CTA-MODULE
@@ -281,6 +334,13 @@
             height: 100%;
             width: auto;
             max-width: none;
+        }
+    }
+
+    .page-template-homepage {
+
+        .service-content-container {
+            min-height: 465px;
         }
     }
 
@@ -605,9 +665,22 @@
 @media only screen and ( min-width: 860px ) {
 
     // HOMEPAGE
-    .service-content-container,
     .client-content-container {
         padding: 40px;
+    }
+
+    .services-list {
+
+        .service-item {
+            width: 24%;
+        }
+    }
+
+    .page-template-homepage {
+
+        .service-content-container {
+            min-height: 615px;
+        }
     }
 
     // SERVICE PAGE
@@ -685,7 +758,7 @@
             text-transform: uppercase;
 
             &:hover {
-                color: $accent;
+                color: $accent2;
             }
         }
     }
@@ -745,7 +818,7 @@
 
         .testimonial-intro {
             border-bottom: 0;
-            border-right: 4px solid $accent;
+            border-right: 4px solid $accent2;
             padding: 20px 20px 0 20px;
             width: 32%;
         }
@@ -774,6 +847,17 @@
 
         .slide-image {
             height: 550px;
+        }
+    }
+
+    .services-list {
+        margin: -100px 0 0 0;
+    }
+
+    .page-template-homepage {
+
+        .service-content-container {
+            min-height: 585px;
         }
     }
 
@@ -888,6 +972,7 @@
                 color: $darkest;
 
                 &:hover {
+                    background-color: $dkaccent;;
                     color: $accent;
                 }
             }
@@ -942,6 +1027,13 @@
 
         p {
             margin: 0 0 40px 0;
+        }
+    }
+
+    .page-template-homepage {
+
+        .service-content-container {
+            min-height: 555px;
         }
     }
 
@@ -1099,6 +1191,13 @@
             margin: 0 0 45px 0;
         }
     }
+
+    .page-template-homepage {
+
+        .service-content-container {
+            min-height: 540px;
+        }
+    }
 }
 
 @media only screen and ( min-width: 1200px ) {
@@ -1125,7 +1224,6 @@
     }
 
     // PAGE INTRO
-
     .page-intro {
 
         .intro-block {
@@ -1138,6 +1236,13 @@
 
         .slide-text-wrapper {
             left: 60px;
+        }
+    }
+
+    .page-template-homepage {
+
+        .service-content-container {
+            min-height: 485px;
         }
     }
 

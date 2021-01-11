@@ -92,7 +92,6 @@ template {
 
 a {
 	background-color: transparent;
-	font-weight: 300;
 	text-decoration: none;
 }
 
@@ -289,11 +288,11 @@ input,
 select,
 optgroup,
 textarea {
-	color: #404040;
+	color: #818181;
 	font-family: $content;
 	font-size: 1rem;
 	font-size: 18px;
-	font-weight: 300;
+	font-weight: 400;
 	letter-spacing: 0.25px;
 	line-height: 1.62;
 	text-rendering: optimizeLegibility;
@@ -303,6 +302,10 @@ h1, h2, h3, h4, h5, h6 {
 	clear: both;
 	margin: 0;
 	padding: 0;
+
+	&.light {
+		color: $lightest;
+	}
 }
 
 p {

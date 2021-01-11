@@ -72,6 +72,11 @@ a.accent2-text {
     color: $accent2;
 }
 
+.dkaccent-text,
+a.dkaccent-text {
+    color: $dkaccent;
+}
+
 .ltgray-text,
 a.ltgray-text {
     color: $ltgray;
@@ -100,6 +105,11 @@ a.accent-bg {
 .accent2-bg,
 a.accent2-bg {
     background-color: $accent2;
+}
+
+.dkaccent-bg,
+a.dkaccent-bg {
+    background-color: $dkaccent;
 }
 
 .white-bg,
@@ -136,6 +146,7 @@ a.white-bg {
 }
 
 a.btn-auto, .btn-auto, a.btn-sm, .btn-sm, a.btn-md, .btn-md, a.btn-lg, .btn-lg, a.btn-xl, .btn-xl {
+    border-radius: $radius;
     color: $lightest;
     display: inline-block;
     font-weight: 700;
@@ -175,7 +186,7 @@ a.btn-auto, .btn-auto, a.btn-sm, .btn-sm, a.btn-md, .btn-md, a.btn-lg, .btn-lg, 
 }
 
 .btn-lg {
-    min-width: 250px;
+    // min-width: 250px;
     padding: 15px 30px;
 }
 
@@ -185,6 +196,7 @@ a.btn-auto, .btn-auto, a.btn-sm, .btn-sm, a.btn-md, .btn-md, a.btn-lg, .btn-lg, 
 }
 
 .big-title {
+    color: $dkaccent;
     font-family: $heading;
     font-size: 27px;
     font-weight: 700;
@@ -202,10 +214,11 @@ ul.content-list {
 
 .slick-prev,
 .slick-next {
-    background-color: $accent;
+    background-color: $accent2;
     border-radius: 20px;
     box-shadow: $lshadow;
     height: 40px;
+    opacity: .65;
     transition: $mtrans;
     width: 40px;
     z-index: 10;

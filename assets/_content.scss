@@ -8,16 +8,19 @@
     background-position: center 0;
 	background-repeat: no-repeat;
     background-size: cover;
-    font-weight: 100;
     color: $lightest;
     text-align: center;
 
     a {
         color: $lightest;
+
+        &:hover {
+            color: $accent !important;
+            background-color: $dkaccent;
+        }
     }
 
     .cta-btn-block {
-        font-weight: 300;
 
         &.accent-bg {
 
@@ -55,6 +58,7 @@
 
     .intro-block {
         background-color: $dkaccent;
+        border-radius: $radius;
         padding: 20px 10px;
     }
 
@@ -119,12 +123,16 @@
 
 // TESTIMONIAL MODULE
 .testimonials {
-    font-weight: 300;
+    font-weight: 500;
 
     .testimonial-intro {
         border-bottom: 4px solid $accent;
         margin: 0 0 10px 0;
         padding: 0 0 10px 0;
+    }
+
+    h2 {
+        color: $dkaccent;
     }
 
     .slick-dotted.slick-slider {
@@ -138,7 +146,7 @@
             background-color: $dkgray;
 
             &.slick-active {
-                background-color: $accent;
+                background-color: $accent2;
             }
 
             button {
@@ -157,9 +165,8 @@
     }
 
     .client-business {
-        color: $accent;
+        color: $accent2;
         font-style: italic;
-        font-weight: 100;
         text-align: right;
     }
 }
@@ -186,21 +193,55 @@
 .slide-content {
     background-color: darken( $accent, 40% );
     color: $lightest;
-    height: 200px;
+    height: 290px;
     overflow: hidden;
     padding: 15px;
 
     .text {
         margin: 0 0 15px 0;
     }
+
+    a {
+
+        &:hover {
+            background-color: $lightest;
+            color: $dkaccent;
+        }
+    }
 }
 
 .page-template-homepage {
     
     .service-content-container {
-        background: $accent;
+        background: $lightest;
+        border-radius: $radius;
+        box-shadow: $lshadow;
         margin: 20px 0 0 0;
+        padding: 25px 15px 20px 15px;
+        text-align: center;
+
+        h2 {
+            color: $dkaccent;
+        }
+
+        img {
+            height: 85px;
+            margin: 0 auto 30px auto;
+        }
+
+        p {
+            margin: 0 0 20px 0;
+        }
+
+        a:hover {
+            background-color: $accent;
+        }
     }
+}
+
+.intro-block {
+    box-shadow: $lshadow;
+    overflow: hidden;
 }
 
 .client-item {
@@ -239,6 +280,7 @@
 
 .industry-block {
     background-color: $dkaccent;
+    border-radius: $radius;
     color: $lightest;
     padding: 20px 10px;
 }
@@ -259,7 +301,7 @@
             position: relative;
 
             &:before {
-                background-color: $accent;
+                background-color: $accent2;
                 content: '';
                 display: block;
                 height: 10px;
@@ -430,7 +472,7 @@
     }
 
     input[type=submit] {
-        background-color: $accent;
+        background-color: $accent2;
         color: $lightest;
         font-size: 18px;
         font-weight: 700;

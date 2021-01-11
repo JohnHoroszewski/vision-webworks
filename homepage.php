@@ -52,13 +52,16 @@ get_header(); ?>
                             <div class="service-item flexxed">
                                 <div class="service-content-container">
                                     <div class="service-content">
+                                        <div class="service-icon">
+                                            <?php
+                                                $sIcon = get_field( 'service_icon' );
+                                            ?>
+                                            <img src="<?php echo $sIcon[ 'url' ]; ?>" alt="<?php echo $sIcon[ 'alt' ]; ?>">
+                                        </div>
                                         <h2><?php the_title(); ?></h2>
                                         <?php the_excerpt(); ?>
-                                        <a class="btn-lg accent2-bg" href="<?php the_permalink(); ?>">Read More</a>
+                                        <a class="btn-lg dkaccent-bg" href="<?php the_permalink(); ?>">Learn More</a>
                                     </div>
-                                </div>
-                                <div class="service-image">
-                                    <?php the_post_thumbnail(); ?>
                                 </div>
                             </div>
 
@@ -118,11 +121,11 @@ get_header(); ?>
                         </div>
                     </div>
 
-                    <div class="cta-btn-block dkgray-bg">
+                    <div class="cta-btn-block <?php the_field( 'contact_cta_module_background_color' ); ?>">
                         <div class="cta-snippet">
                             <?php echo get_theme_mod( 'theme_cta_button_snippet' ); ?>
                         </div>
-                        <a class="accent2-bg btn-md" href="<?php echo get_theme_mod( 'theme_cta_button_url' ); ?>">
+                        <a class="<?php the_field( 'contact_cta_button_color' ); ?> btn-md" href="<?php echo get_theme_mod( 'theme_cta_button_url' ); ?>">
                             <?php echo get_theme_mod( 'theme_cta_button_text' ); ?>
                         </a>
                     </div>

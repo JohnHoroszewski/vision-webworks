@@ -7,24 +7,30 @@ $accent2: #2bb7ce;
 $dkaccent: #06314d;
 $lightest: #fff;
 $ltgray: #cdcdcd;
-$dkgray: #464646;
-$darkest: #292929;
+$dkgray: #575757;
+$darkest: #505050;
 
 // ---------------------------------------------------
 //    Shadow
 // ---------------------------------------------------
 
-$lshadow: 0 2px 3px 0 rgba(0,0,0,.15);;
+$lshadow: 0 2px 10px 0 rgba(0,0,0,.15);;
 
 // ---------------------------------------------------
 //    Typography
 // ---------------------------------------------------
 
-@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700|Montserrat:100,400,600,700,900');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;900&family=Raleway:wght@100;400;600&display=swap');
 
 $heading: 'Montserrat', sans-serif;
-$content: 'Lato', sans-serif;
+$content: 'Raleway', sans-serif;
 $fa: 'FontAwesome';
+
+// ---------------------------------------------------
+//    Border Raduis
+// ---------------------------------------------------
+
+$radius: 3px;
 
 // ---------------------------------------------------
 //    Css Transitions
