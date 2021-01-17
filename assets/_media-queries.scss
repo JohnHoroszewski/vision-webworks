@@ -14,7 +14,7 @@
     }
 
     .page-template-homepage .intro-block {
-        margin: initial;
+        margin: initial !important;
     }
 
     .intro-block {
@@ -80,11 +80,11 @@
     }
 
     .main-header {
-        padding: 15px 0;
+        padding: 20px 0;
     }
 
     a.top-logo {
-        width: 350px;
+        width: 245px;
     }
     
     button#responsive-menu-button {
@@ -93,7 +93,7 @@
 
     // GENERAL CONTENT
     .site-content {
-        margin: 117px 0 0 0;
+        margin: 105px 0 0 0;
     }
 
     // RECENT WORK MODULE
@@ -503,6 +503,7 @@
     .page-intro {
 
         .intro-block {
+            margin: -90px 0 0 0;
 
             &.service-intro {
                 padding: 0;
@@ -749,7 +750,7 @@
     .main-navigation {
         float: right;
         font-size: 18px;
-        margin: 15px 0 0 0;
+        margin: 7px 0 0 0;
         width: auto;
 
         li a {
@@ -758,7 +759,7 @@
             text-transform: uppercase;
 
             &:hover {
-                color: $accent2;
+                color: $accent;
             }
         }
     }
@@ -818,7 +819,7 @@
 
         .testimonial-intro {
             border-bottom: 0;
-            border-right: 4px solid $accent2;
+            border-right: 4px solid $accent;
             padding: 20px 20px 0 20px;
             width: 32%;
         }
@@ -963,7 +964,7 @@
         overflow: hidden;
 
         .overlay {
-            background-color: rgba( $accent, 0.85 );
+            background-color: rgba( $accent, 0 );
             top: 100%;
 
             .view-project,
@@ -981,6 +982,7 @@
         &:hover {
 
             .overlay {
+                background-color: rgba( $accent, 0.85 );
                 top: 0;
             }
         }
@@ -1001,6 +1003,7 @@
 
         .intro-block {
             padding: 35px;
+            margin: -120px 0 0 0;
 
             h2 {
                 width: 31%;
@@ -1198,6 +1201,13 @@
             min-height: 540px;
         }
     }
+
+    .page-intro {
+
+        .intro-block {
+            margin: -135px 0 0 0;
+        }
+    }
 }
 
 @media only screen and ( min-width: 1200px ) {
@@ -1227,6 +1237,7 @@
     .page-intro {
 
         .intro-block {
+            margin: -140px 0 0 0;
             padding: 50px;
         }
     }

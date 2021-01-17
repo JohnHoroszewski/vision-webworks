@@ -13,7 +13,7 @@
 <?php $pBanner = get_field( 'top_banner_image' ); ?>
     <div class="page-banner" style="background-image:url('<?php echo $pBanner[ 'url' ]; ?>');">
         <div class="constrain">
-            <h1 class="big-title"><?php the_title(); ?></h1>
+            <h1 class="big-title big-title-white"><?php the_title(); ?></h1>
         </div>
     </div>
     

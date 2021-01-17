@@ -56,6 +56,10 @@
 .page-intro {
     color: $lightest;
 
+    &.p50 {
+        padding-bottom: 0 !important;
+    }
+
     .intro-block {
         background-color: $dkaccent;
         border-radius: $radius;
@@ -146,7 +150,7 @@
             background-color: $dkgray;
 
             &.slick-active {
-                background-color: $accent2;
+                background-color: $accent;
             }
 
             button {
@@ -165,7 +169,7 @@
     }
 
     .client-business {
-        color: $accent2;
+        color: $accent;
         font-style: italic;
         text-align: right;
     }
@@ -301,7 +305,7 @@
             position: relative;
 
             &:before {
-                background-color: $accent2;
+                background-color: $accent;
                 content: '';
                 display: block;
                 height: 10px;
@@ -410,6 +414,36 @@
     }
 }
 
+.services {
+
+    .service-content-container {
+
+        h2 {
+            color: $dkaccent;
+        }
+    }
+}
+
+.service-item {
+    border-bottom: 2px solid #d4d4d4;
+    margin: 0 0 35px 0;
+    padding: 0 0 35px 0;
+
+    &:last-of-type {
+        border: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    &.flexxed {
+        flex-direction: column-reverse;
+    }
+
+    .service-image {
+        margin: 0 0 15px 0;
+    }
+}
+
 // CONTACT PAGE
 .contact {
 
@@ -457,6 +491,7 @@
 
     .contact-form {
         background-color: $dkgray;
+        border-radius: $radius;
         color: $lightest;
         padding: 10px;
     }
@@ -472,7 +507,8 @@
     }
 
     input[type=submit] {
-        background-color: $accent2;
+        background-color: $accent;
+        border-radius: $radius;
         color: $lightest;
         font-size: 18px;
         font-weight: 700;

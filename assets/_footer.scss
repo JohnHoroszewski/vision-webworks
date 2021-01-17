@@ -1,10 +1,10 @@
 .site-footer {
 
     a:hover {
-        color: $accent2;
+        color: $accent;
 
         & > svg {
-            color: $accent2;
+            color: $accent;
         }
     }
 }
@@ -15,7 +15,7 @@
     padding: 20px 0;
 
     a {
-        color: $accent2;
+        color: $accent;
         font-weight: 900;
 
         &:hover {
@@ -37,6 +37,11 @@
     .widget-title {
         font-weight: 900;
     }
+}
+
+a.cfrp-title {
+    display: inline-block;
+    margin: 0 0 20px 0;
 }
 
 .cfrp-footer-excerpt {
@@ -77,11 +82,15 @@
     }
 }
 
+.footer-col {
+    margin: 0 0 25px 0;
+}
+
 .subscribe {
     position: relative;
 
     button[type=submit] {
-        background-color: $accent2;
+        background-color: $accent;
         color: $lightest;
         height: 40px;
         position: absolute;

@@ -69,7 +69,7 @@ a.accent-text {
 
 .accent2-text,
 a.accent2-text {
-    color: $accent2;
+    color: $accent;
 }
 
 .dkaccent-text,
@@ -104,7 +104,7 @@ a.accent-bg {
 
 .accent2-bg,
 a.accent2-bg {
-    background-color: $accent2;
+    background-color: $accent;
 }
 
 .dkaccent-bg,
@@ -201,6 +201,10 @@ a.btn-auto, .btn-auto, a.btn-sm, .btn-sm, a.btn-md, .btn-md, a.btn-lg, .btn-lg, 
     font-size: 27px;
     font-weight: 700;
     text-transform: uppercase;
+
+    &.big-title-white {
+        color: $lightest;
+    }
 }
 
 ul.content-list {
@@ -214,7 +218,7 @@ ul.content-list {
 
 .slick-prev,
 .slick-next {
-    background-color: $accent2;
+    background-color: $accent;
     border-radius: 20px;
     box-shadow: $lshadow;
     height: 40px;
