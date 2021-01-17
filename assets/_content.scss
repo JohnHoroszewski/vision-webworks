@@ -425,7 +425,7 @@
 }
 
 .service-item {
-    border-bottom: 2px solid #d4d4d4;
+    border-bottom: 2px solid #d6e1e8;
     margin: 0 0 35px 0;
     padding: 0 0 35px 0;
 
@@ -441,6 +441,11 @@
 
     .service-image {
         margin: 0 0 15px 0;
+
+        img {
+            height: 100px;
+            object-fit: cover;
+        }
     }
 }
 
