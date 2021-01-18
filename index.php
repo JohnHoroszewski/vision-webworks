@@ -25,7 +25,7 @@ get_header(); ?>
 				<?php $pBanner = get_field( 'top_banner_image', 'option' ); ?>
 				<div class="page-banner" style="background-image:url('<?php echo $pBanner[ 'url' ]; ?>');">
 					<div class="constrain">
-						<div class="big-title">In Our Own Words</div>
+						<div class="big-title big-title-white">In Our Own Words</div>
 					</div>
 				</div>
 					

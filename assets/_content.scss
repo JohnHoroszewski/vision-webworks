@@ -195,7 +195,7 @@
 }
 
 .slide-content {
-    background-color: darken( $accent, 40% );
+    background-color: $dkaccent;
     color: $lightest;
     height: 290px;
     overflow: hidden;
@@ -396,7 +396,7 @@
     .intro-block {
 
         &.service-intro {
-            background-color: $dkgray;
+            background-color: $dkaccent;
             background-image: none;
         }
     }
@@ -424,27 +424,56 @@
     }
 }
 
-.service-item {
-    border-bottom: 2px solid #d6e1e8;
-    margin: 0 0 35px 0;
-    padding: 0 0 35px 0;
+.services {
 
-    &:last-of-type {
-        border: none;
-        margin: 0;
-        padding: 0;
+    .service-item {
+        border-bottom: 2px solid #d6e1e8;
+        margin: 0 0 35px 0;
+        padding: 0 0 35px 0;
+
+        &:last-of-type {
+            border: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        &.flexxed {
+            flex-direction: column-reverse;
+        }
+
+        .service-image {
+            margin: 0 0 15px 0;
+
+            img {
+                height: 100px;
+                object-fit: cover;
+            }
+        }
     }
+}
 
-    &.flexxed {
-        flex-direction: column-reverse;
-    }
+.single-service {
 
-    .service-image {
-        margin: 0 0 15px 0;
+    .service-intro {
 
         img {
-            height: 100px;
+            height: 150px;
             object-fit: cover;
+        }
+
+        .services-text {
+            padding: 15px;
+        }
+
+        h1 {
+            font-size: 28px;
+        }
+    }
+
+    .service-content {
+
+        img {
+            box-shadow: 0 0 30px 30px #fff;
         }
     }
 }
@@ -470,12 +499,19 @@
             margin: 0;
         }
 
-        .social-icon {
-           font-size: 28px;
-           margin: 0 15px 0 0;
+        a.social-icon {
+            color: $accent;    
+            font-size: 28px;
+            margin: 0 15px 0 0;
+            transition: $mtrans;
 
            svg {
             color: $lightest               
+           }
+
+           &:hover {
+               color: $ltgray;
+               transition: $mtrans;
            }
         }
     }
@@ -485,7 +521,7 @@
         position: relative;
 
         &:before {
-            color: $dkgray;
+            color: $accent;
             content: '\f101';
             font-family: $fa;
             left: 0;
@@ -553,10 +589,16 @@
             }
         }
     }
+
+    .page-intro.p50 {
+        padding-bottom: 25px !important;
+    }
 }
 
 .blog-post {
-    margin: 0 0 20px 0;
+    border-bottom: 2px solid #d6e1e8;
+    margin: 0 0 35px 0;
+    padding: 0 0 35px 0;
 
     &.flexxed {
         -webkit-box-orient: vertical;

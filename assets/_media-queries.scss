@@ -13,18 +13,19 @@
         top: 22%;
     }
 
-    .page-template-homepage .intro-block {
-        margin: initial !important;
-    }
-
+    // HOMEPAGE
     .intro-block {
         margin: -50px 0 0 0;
     }
 
     .page-template-homepage {
 
+        .intro-block {
+            margin: initial !important;
+        }
+
         .service-content-container {
-            min-height: 585px;
+            min-height: 450px;
             position: relative;
 
             a {
@@ -37,16 +38,38 @@
         }
     }
 
-    .services-list {
+    .services {
 
-        .service-item {
+        .services-list {
 
-            h2 {
-                font-size: 20px;
+            .service-item {
+
+                h2 {
+                    font-size: 20px;
+                }
+
+                img {
+                    height: 150px;
+                }
             }
+        }
+    } 
 
-            img {
-                height: 150px;
+    // SERVICE PAGE
+    .single-service {
+
+        .page-intro {
+            margin: 10px 0 0 0;
+        }
+
+        .service-intro {
+    
+            .services-text {
+                padding: 20px;
+            }
+    
+            h1 {
+                font-size: 34px;
             }
         }
     }
@@ -134,7 +157,7 @@
     .page-template-homepage {
 
         .service-content-container {
-            min-height: 530px;
+            min-height: 490px;
         }
     }
 
@@ -143,12 +166,16 @@
         padding: 35px 0 30px;
     }
 
-    .services-list {
+    // SERVICES PAGE
+    .services {
 
-        .service-item {
+        .services-list {
 
-            img {
-                height: 175px;
+            .service-item {
+
+                img {
+                    height: 175px;
+                }
             }
         }
     }
@@ -202,6 +229,7 @@
     .cta-module {
 
         .flexxed {
+            align-items: center;
             -webkit-box-orient: horizontal;
             -webkit-box-direction: normal;
                 -ms-flex-direction: row;
@@ -230,40 +258,69 @@
 
     .page-template-homepage {
 
-        .service-content-container {
-            min-height: 480px;
-        }
-    }
+        .services-list {
+            margin: -75px 0 0;
 
-    // SERVICES PAGE
-    .services-list {
-        
-        .service-item {
-    
-            img {
-                height: 300px;
+            .constrain {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
             }
-        }
-    }
 
-    .service-item {
-
-        &.flexxed {
-            align-items: center;
-            flex-direction: row;
-            justify-content: space-between;
-
-            &> div {
+            .service-item {
                 width: 48%;
             }
         }
 
-        .service-image {
-            margin: 0;
+        .service-content-container {
+            min-height: 625px;
+        }
+    }
+
+    // SERVICES PAGE
+    .services {
+        
+        .services-list {
+            
+            .service-item {
+        
+                img {
+                    height: 300px;
+                }
+            }
         }
 
-        &:nth-child( odd ) {
-            flex-direction: row-reverse;
+        .service-item {
+
+            &.flexxed {
+                align-items: center;
+                flex-direction: row;
+                justify-content: space-between;
+    
+                &> div {
+                    width: 48%;
+                }
+            }
+    
+            .service-image {
+                margin: 0;
+            }
+    
+            &:nth-child( odd ) {
+                flex-direction: row-reverse;
+            }
+        }
+    }
+
+    // SERVICE PAGE
+    .single-service {
+
+        .service-intro {
+
+            img {
+                height: 225px;
+            }
         }
     }
 }
@@ -377,8 +434,15 @@
 
     .page-template-homepage {
 
+        .services-list {
+
+            .service-item {
+                width: 49%;
+            }
+        }
+
         .service-content-container {
-            min-height: 465px;
+            min-height: 550px;
         }
     }
 
@@ -537,19 +601,52 @@
         }
     }
 
-    // SERVICE PAGE
-    .page-intro {
+    // SERVICES PAGE
+    .services {
+        
+        .page-intro {
 
-        .intro-block {
-            margin: -90px 0 0 0;
+            .intro-block {
+                margin: -70px 0 0 0;
 
-            &.service-intro {
-                padding: 0;
+                &.service-intro {
+                    padding: 0;
+                }
+            }
+
+            .services-text {
+                padding: 20px;
             }
         }
+    }
 
-        .services-text {
-            padding: 20px;
+    // SERVICE PAGE
+    .single-service {
+
+        .page-intro {
+            margin: -10px 0 0 0;
+
+            .service-intro {
+
+                &.flexxed {
+                    align-items: center;
+                    flex-direction: row;
+                    justify-content: space-between;
+                }
+
+                .services-text {
+                    width: 50%;
+                }
+    
+                .services-image {
+                    width: 50%;
+    
+                    img {
+                        height: 100%;
+                        min-height: 350px;
+                    }
+                }
+            }
         }
     }
 
@@ -711,28 +808,28 @@
     .page-template-homepage {
 
         .service-content-container {
-            min-height: 615px;
+            min-height: 560px;
         }
     }
 
     // SERVICE PAGE
-    .page-intro {
+    .services {
 
-        .service-intro {
+        .page-intro {
 
-            &.flexxed {
-                -webkit-box-orient: horizontal;
-                -webkit-box-direction: normal;
-                    -ms-flex-direction: row;
-                        flex-direction: row;
-                -webkit-box-pack: justify;
-                    -ms-flex-pack: justify;
-                        justify-content: space-between;
+            .service-intro {
+
+                &.flexxed {
+                    align-items: center;
+                    -webkit-box-orient: horizontal;
+                    -webkit-box-direction: normal;
+                        -ms-flex-direction: row;
+                            flex-direction: row;
+                    -webkit-box-pack: justify;
+                        -ms-flex-pack: justify;
+                            justify-content: space-between;
+                }
             }
-        }
-
-        .services-text {
-            width: 50%;
         }
     }
 }
@@ -884,6 +981,18 @@
 
     .page-template-homepage {
 
+        .services-list {
+            margin: -100px 0 0;
+
+            .service-item {
+                width: 24%;
+
+                h2 {
+                    font-size: 20px;
+                }
+            }
+        }
+
         .service-content-container {
             min-height: 585px;
         }
@@ -901,23 +1010,34 @@
     }
 
     // SERVICES PAGE
-    .services-list {
-        
-        .service-item {
+    .services {
 
-            img {
-                height: 225px;
-                filter: grayscale( 1 );
-                transition: $mtrans;
-            }
-
-            &:hover {
+        .services-list {
+            
+            .service-item {
 
                 img {
-                    filter: grayscale( 0 );
+                    height: 225px;
+                    filter: grayscale( 1 );
                     transition: $mtrans;
                 }
+
+                &:hover {
+
+                    img {
+                        filter: grayscale( 0 );
+                        transition: $mtrans;
+                    }
+                }
             }
+        }
+    }
+
+    // SERVICE PAGE
+    .single-service {
+
+        .page-intro {
+            margin: -20px 0 0 0;
         }
     }
 
@@ -1050,7 +1170,7 @@
         }
 
         .intro-block {
-            padding: 35px;
+            // padding: 35px;
             margin: -120px 0 0 0;
 
             h2 {
@@ -1140,29 +1260,53 @@
     }
 
     // SERVICES PAGE
-    .service-item {
-        margin: 0 0 45px;
-        padding: 0 0 45px;
+    .services {
 
-        .service-image {
-            box-shadow: 0 0 0 0 rgba(6,49,77,.75);
-            transition: $mtrans;
+        .page-intro {
+
+            .intro-block {
+                margin: -90px 0 0;
+            }
         }
 
-        &:hover {
+        .services-list {
+
+            .service-item {
+
+                h2 {
+                    font-size: 24px;
+                }
+            }
+        }
+
+        .service-item {
+            margin: 0 0 45px;
+            padding: 0 0 45px;
 
             .service-image {
-                box-shadow: 10px 10px 0 0 rgba(6,49,77,.75);
+                box-shadow: 0 0 0 0 rgba(6,49,77,.75);
                 transition: $mtrans;
+            }
+
+            &:hover {
+
+                .service-image {
+                    box-shadow: 10px 10px 0 0 rgba(6,49,77,.75);
+                    transition: $mtrans;
+                }
             }
         }
     }
 
     // SERVICE PAGE
-    .page-intro {
+    .single-service {
 
-        .services-text {
-            padding: 30px;
+        .page-intro {
+            margin: 20px 0 0;
+
+            .services-text {
+                padding: 30px;
+            }
         }
     }
 
@@ -1188,6 +1332,10 @@
                     width: 33%;
                 }
             }
+        }
+
+        .page-intro.p50 {
+            margin: 35px !important;
         }
     }
 
@@ -1275,6 +1423,42 @@
             margin: -135px 0 0 0;
         }
     }
+
+    .services {
+
+        .page-intro {
+
+            .intro-block {
+                margin: -120px 0 0;
+            }
+        }
+    }
+
+    // SERVICES PAGE
+    .services {
+
+        .services-list {
+
+            .service-item {
+
+                img {
+                    height: 275px;
+                }
+
+                h2 {
+                    font-size: 28px;
+                }
+            }
+        }
+    }
+
+    // BLOG
+    .blog {
+
+        .page-intro.p50 {
+            margin: 50px !important;
+        }
+    }
 }
 
 @media only screen and ( min-width: 1200px ) {
@@ -1320,7 +1504,7 @@
     .page-template-homepage {
 
         .service-content-container {
-            min-height: 485px;
+            min-height: 500px;
         }
     }
 
@@ -1331,6 +1515,19 @@
     // PAGE BANNER
     .page-banner {
         padding: 45px 0 110px;
+    }
+
+    // SERVICE PAGE
+    .single-service {
+
+        .page-intro {
+            margin: -130px 0 0;
+
+            .intro-block {
+                margin: 0;
+                padding: 0;
+            }
+        }
     }
 
     // CONTACT PAGE

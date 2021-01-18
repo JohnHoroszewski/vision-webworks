@@ -9,7 +9,7 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class( 'services'); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class( 'services' ); ?>>
 <?php $pBanner = get_field( 'top_banner_image' ); ?>
     <div class="page-banner" style="background-image:url('<?php echo $pBanner[ 'url' ]; ?>');">
         <div class="constrain">
