@@ -94,7 +94,7 @@
     }
 
     .overlay {
-        background-color: rgba( $darkest, 0.65 );
+        background-color: rgba( 0, 0, 0, 0.6 );
         color: $lightest;
         display: block;
         height: 100%;
@@ -122,6 +122,10 @@
 
     .client-sector {
         margin: 0 0 10px 0;
+    }
+
+    .project-info {
+        line-height: 1.15em;
     }
 }
 
@@ -248,39 +252,39 @@
     overflow: hidden;
 }
 
-.client-item {
-    background-color: $dkgray;
-    color: $lightest;
+// .client-item {
+//     background-color: $dkgray;
+//     color: $lightest;
 
-    &.flexxed {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: reverse;
-            -ms-flex-direction: column-reverse;
-                flex-direction: column-reverse;
-    }
-}
+//     &.flexxed {
+//         -webkit-box-orient: vertical;
+//         -webkit-box-direction: reverse;
+//             -ms-flex-direction: column-reverse;
+//                 flex-direction: column-reverse;
+//     }
+// }
 
-.client-content-container {
-    padding: 20px;
-    text-align: center;
+// .client-content-container {
+//     padding: 20px;
+//     text-align: center;
 
-    p {
-        margin: 0 0 20px 0;
-    }
-}
+//     p {
+//         margin: 0 0 20px 0;
+//     }
+// }
 
-.client-image {
-    display: block;
-    height: 150px;
-    max-width: none;
-    overflow: hidden;
-    width: 100%;
+// .client-image {
+//     display: block;
+//     height: 150px;
+//     max-width: none;
+//     overflow: hidden;
+//     width: 100%;
 
-    img {
-        display: block;
-        width: 100%;
-    }
-}
+//     img {
+//         display: block;
+//         width: 100%;
+//     }
+// }
 
 .industry-block {
     background-color: $dkaccent;
@@ -561,7 +565,6 @@
 
 .gmap {
     height: 300px;
-    margin: 20px 0;
     overflow: hidden;
 }
 

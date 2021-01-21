@@ -4,12 +4,12 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Clever_Fox_Media
+ * @package envision_web_media
  */
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class( 'clients' ); ?>>
 <?php $pBanner = get_field( 'top_banner_image' ); ?>
     <div class="page-banner" style="background-image:url('<?php echo $pBanner[ 'url' ]; ?>');">
         <div class="constrain">
@@ -33,7 +33,30 @@
     <section class="clients-list p50">
         <div class="constrain">
 
-            <?php
+
+            <div class="flexxed">
+                <?php query_posts( array( 'post_type' => 'client', 'showposts' => -1, 'order' => 'ASC' ) ); ?>
+                <?php while ( have_posts() ) : the_post(); ?>
+                    <div class="recent-work-item">
+                        <?php the_post_thumbnail(); ?>
+                        <div class="overlay">
+                            <div class="client-info-container">
+                                <h4><?php the_title(); ?></h4>
+                                <div class="project-info">
+                                    <?php the_field( 'project_type' ); ?>
+                                </div>
+                                <div class="client-sector">
+                                    <?php the_field( 'client_sector' ); ?>
+                                </div>
+                                <a class="btn-auto accent-bg view-project" href="<?php the_permalink(); ?>">Read More</a>
+                                </div>
+                        </div><!-- .overlay -->
+                    </div>
+                <?php endwhile; ?>
+                <?php wp_reset_query(); ?>
+            </div>
+
+            <!-- <?php
                 query_posts( array( 'post_type' => 'client', 'orderby' => 'menu_order', 'showposts' => -1 ) ); ?>
                 <?php while ( have_posts() ) : the_post(); ?>
 
@@ -55,27 +78,9 @@
                     </div>
 
                 <?php endwhile; ?>
-            <?php wp_reset_query(); ?>
+            <?php wp_reset_query(); ?> -->
         </div><!-- .constrain -->
     </section><!-- .services-list -->
 </article><!-- #post-<?php the_ID(); ?> -->
-<section class="cta-module parallax <?php the_field( 'module_margin' ); ?>" style="background-image:url( '<?php echo get_theme_mod( 'theme_cta_background_image' ); ?>' );">
-    <div class="constrain flexxed">
 
-        <div class="cta-content p50">
-            <h3><?php echo get_theme_mod( 'theme_cta_heading' ); ?></h3>
-            <div class="text-block">
-                <?php echo get_theme_mod( 'theme_cta_text' ); ?>
-            </div>
-        </div>
-
-        <div class="cta-btn-block <?php the_field( 'contact_cta_module_background_color' ); ?>">
-            <div class="cta-snippet">
-                <?php echo get_theme_mod( 'theme_cta_button_snippet' ); ?>
-            </div>
-            <a class="<?php the_field( 'contact_cta_button_color' ); ?> btn-md" href="<?php echo get_theme_mod( 'theme_cta_button_url' ); ?>">
-                <?php echo get_theme_mod( 'theme_cta_button_text' ); ?>
-            </a>
-        </div>
-    </div><!-- .constrain -->
-</section><!-- .cta-module -->
+<?php ewm_cta_module(); ?>

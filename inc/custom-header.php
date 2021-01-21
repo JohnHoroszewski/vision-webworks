@@ -8,7 +8,7 @@
  *
  * @link https://developer.wordpress.org/themes/functionality/custom-headers/
  *
- * @package Clever_Fox_Media
+ * @package envision_web_media
  */
 
 /**

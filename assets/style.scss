@@ -612,7 +612,7 @@ a:hover, a:active {
 }
 
 .main-navigation ul ul a {
-	width: 215px;
+	width: 225px;
 }
 
 .main-navigation ul li:hover > ul,
@@ -633,7 +633,27 @@ a:hover, a:active {
 			color: $accent;
 			font-weight: 700;
 		}
-	}	
+	}
+	
+	ul.sub-menu {
+
+		li.current-menu-item {
+			
+			a {
+				color: $accent;
+				font-weight: 700;
+			}
+		}
+
+		a {
+			color: $dkgray;
+			font-weight: 500;
+
+			&:hover {
+				color: $accent;
+			}
+		}
+	}
 }
 
 .main-navigation a {

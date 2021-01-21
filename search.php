@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
  *
- * @package Clever_Fox_Media
+ * @package envision_web_media
  */
 
 get_header(); ?>

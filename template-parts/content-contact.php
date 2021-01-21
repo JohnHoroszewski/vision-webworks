@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Clever_Fox_Media
+ * @package envision_web_media
  */
 
 ?>
@@ -59,13 +59,4 @@
     </section>
 </article><!-- #post-<?php the_ID(); ?> -->
 
-<section class="portfolio-cta-module p50 <?php the_field( 'portfolio_cta_module_background_color' ); ?> <?php the_field( 'second_module_margin' ); ?>">
-        <div class="constrain flexxed">
-            <div class="cta-text">
-            <h3>Want to see some of our most Recent Work?</br>
-            Check out our Clients</h3>
-            </div>
-            <a href="/clients/" class="btn-lg <?php the_field( 'portfolio_cta_module_button_color' ); ?> white-text">Clients</a>
-        </div><!-- .contrain -->
-    </section><!-- .portfolio-cta-module -->
-</section><!-- .cta-module -->
+<?php ewm_port_cta_module(); ?>

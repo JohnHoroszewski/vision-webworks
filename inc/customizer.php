@@ -2,7 +2,7 @@
 /**
  * Clever Fox Media Theme Customizer
  *
- * @package Clever_Fox_Media
+ * @package envision_web_media
  */
 
 /**

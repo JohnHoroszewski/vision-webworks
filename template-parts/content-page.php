@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Clever_Fox_Media
+ * @package envision_web_media
  */
 
 ?>
@@ -37,23 +37,5 @@
 	</section>
 
 </article><!-- #post-<?php the_ID(); ?> -->
-<section class="cta-module parallax <?php the_field( 'module_margin' ); ?>" style="background-image:url( '<?php echo get_theme_mod( 'theme_cta_background_image' ); ?>' );">
-    <div class="constrain flexxed">
 
-        <div class="cta-content p50">
-            <h3><?php echo get_theme_mod( 'theme_cta_heading' ); ?></h3>
-            <div class="text-block">
-                <?php echo get_theme_mod( 'theme_cta_text' ); ?>
-            </div>
-        </div>
-
-        <div class="cta-btn-block <?php the_field( 'contact_cta_module_background_color' ); ?>">
-            <div class="cta-snippet">
-                <?php echo get_theme_mod( 'theme_cta_button_snippet' ); ?>
-            </div>
-            <a class="<?php the_field( 'contact_cta_button_color' ); ?> btn-md" href="<?php echo get_theme_mod( 'theme_cta_button_url' ); ?>">
-                <?php echo get_theme_mod( 'theme_cta_button_text' ); ?>
-            </a>
-        </div>
-    </div><!-- .constrain -->
-</section><!-- .cta-module -->
+<?php ewm_cta_module(); ?>

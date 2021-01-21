@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package Clever_Fox_Media
+ * @package envision_web_media
  */
 
 // @include 'includes/customizer.php';

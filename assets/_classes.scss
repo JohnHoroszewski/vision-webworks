@@ -1,10 +1,10 @@
 ::-webkit-selection {
-    background-color: #443b68;
+    background-color: #ae4a01;
     color: $lightest;
 }
 
 ::selection {
-    background-color: #443b68;
+    background-color: #ae4a01;
     color: $lightest;
 }
 
@@ -261,6 +261,46 @@ ul.content-list {
 
     &:before {
         content: '\f105';
+    }
+}
+
+.get-a-quote {
+    background-color: $accent;
+
+    a {
+        color: $lightest !important;
+        font-weight: 700;
+    }
+}
+
+.single-post {
+
+    .intro-block {
+
+        .sharethis {
+
+            a {
+                color: $accent !important;
+
+                &:hover {
+                    color: $ltgray !important;
+                }
+            }
+        }
+    }
+}
+
+.client-intro {
+
+    .intro-share {
+
+        a {
+            color: $accent;
+
+            &:hover {
+                color: $ltgray;
+            }
+        }
     }
 }
 

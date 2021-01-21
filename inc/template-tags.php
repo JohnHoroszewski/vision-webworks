@@ -4,7 +4,7 @@
  *
  * Eventually, some of the functionality here could be replaced by core features.
  *
- * @package Clever_Fox_Media
+ * @package envision_web_media
  */
 
 if ( ! function_exists( 'cfm_posted_on' ) ) :

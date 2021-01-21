@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package Clever_Fox_Media
+ * @package envision_web_media
  */
 
 ?>

@@ -4,7 +4,7 @@
  *
  * @link https://jetpack.com/
  *
- * @package Clever_Fox_Media
+ * @package envision_web_media
  */
 
 /**

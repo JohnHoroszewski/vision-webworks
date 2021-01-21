@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Clever_Fox_Media
+ * @package envision_web_media
  */
 
 ?>
@@ -37,11 +37,10 @@
 								<span class="meta-info-title">Posted In:</span><ul class="meta-cat-list"><?php wp_list_categories( 'title_li=' ); ?></ul>
 							</div>
 							<div class="meta sharethis">
-								<span class="meta-info-title">Share:</span> <a class="social-icon facebook" href=""><i class="white-text fa fa-facebook"></i></a>
-								<a class="social-icon twitter" href=""><i class="white-text fa fa-twitter"></i></a>
-								<a class="social-icon google" href=""><i class="white-text fa fa-google"></i></a>
-								<a class="social-icon linkedin" href=""><i class="white-text fa fa-linkedin"></i></a>
-								<a class="social-icon email" href="mailto:contact@visionwebworks.com"><i class="white-text fa fa-envelope"></i></a>
+								<span class="meta-info-title">Share:</span> <a class="social-icon facebook" href=""><i class="fa fa-facebook"></i></a>
+								<a class="social-icon twitter" href=""><i class="fa fa-twitter"></i></a>
+								<a class="social-icon linkedin" href=""><i class="fa fa-linkedin"></i></a>
+								<a class="social-icon email" href="mailto:contact@visionwebworks.com"><i class="fa fa-envelope"></i></a>
 							</div>
 						</div><!-- .entry-meta -->
 					</div>
