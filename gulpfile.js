@@ -7,6 +7,7 @@ const browserSync = require('browser-sync').create();
  
 sass.compiler = require('node-sass');
 
+// Create browsersyn function
 function sync(done) {
   browserSync.init({
     files: [
@@ -17,6 +18,7 @@ function sync(done) {
   done();
 }
 
+// Create sass and sourcemaps function
 function sassy() {
   return gulp.src('./assets/*.scss')
     .pipe( sourcemaps.init() )
@@ -28,9 +30,11 @@ function sassy() {
     .pipe(browserSync.stream());
 };
 
+// Create tasks for functions(probably not needed)
 gulp.task( "sass", sassy );
 gulp.task( "sync", sync )
 
+// Create watch task
 gulp.task( 'watch', function () {
   gulp.watch('./assets/*.scss', gulp.parallel('sass', 'sync'));
 });
