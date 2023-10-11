@@ -585,11 +585,8 @@
 
     article {
 
-        &:nth-of-type( even ) {
-        
-            h2 a {
-                color: $dkgray;
-            }
+        h2 a {
+            color: $dkgray;
         }
 
         &:nth-of-type( odd ) {

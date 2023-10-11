@@ -17,6 +17,7 @@
 	<meta >
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="shortcut icon" type="image/x-icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
 	<style>.home-slider, .testimonial-slider { display: none; }</style>
 	<?php wp_head(); ?>
 

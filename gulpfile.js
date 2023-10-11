@@ -13,6 +13,7 @@ function sync(done) {
     files: [
       './**/*.php'
     ],
+    // Changegit
     proxy: 'http://localhost/visionww'
   });
   done();
@@ -32,9 +33,10 @@ function sassy() {
 
 // Create tasks for functions(probably not needed)
 gulp.task( "sass", sassy );
-gulp.task( "sync", sync )
+gulp.task( "sync", sync );
 
 // Create watch task
 gulp.task( 'watch', function () {
-  gulp.watch('./assets/*.scss', gulp.parallel('sass', 'sync'));
+  gulp.watch('./assets/*.scss', gulp.series('sass'));
+  gulp.watch('./**/*.php', gulp.series('sync'));
 });

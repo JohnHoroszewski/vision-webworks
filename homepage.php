@@ -8,13 +8,9 @@
  */
 
 get_header(); ?>
-
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
-
             <section class="home-slider">
-
-            
                 <?php if ( have_rows( 'home_slider' ) ) : ?>
                     <?php while ( have_rows( 'home_slider' ) ) : the_row(); ?>
 
