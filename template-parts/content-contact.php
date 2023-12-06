@@ -20,9 +20,9 @@
     <section class="page-intro p50">
     <div class="constrain">
         <div class="intro-block">
-            <h2>
+            <h1>
                 <?php the_field( 'intro_title' ); ?>
-            </h2>
+            </h1>
             <div class="intro-text">
                 <?php the_field( 'intro_text' ); ?>
             </div>

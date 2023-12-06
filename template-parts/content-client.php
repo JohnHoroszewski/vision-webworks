@@ -30,11 +30,10 @@
                     <div class="intro-share">
                         <h5>Wanna Share?</h5>
                         <div class="share-icons">
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-linkedin"></i></a>
-                            <!-- <a href="#"><i class="fab fa-pinterest"></i></a> -->
-                            <a href="#"><i class="fa fa-envelope"></i></a>
+                            <a href="https://twitter.com/intent/tweet?text=<?php echo get_permalink(); ?>"><i class="fa fa-twitter"></i></a>
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo get_permalink(); ?>"><i class="fa fa-facebook"></i></a>
+                            <!-- <a href="#"><i class="fa fa-linkedin"></i></a> -->
+                            <a href="mailto:?subject=Envision%20Web%20Client&body=Check%20out%20this%20great%20client%20site%20from%20Envision%20-%20<?php echo get_permalink(); ?>"><i class="fa fa-envelope"></i></a>
                         </div>
                     </div>
                 </div>

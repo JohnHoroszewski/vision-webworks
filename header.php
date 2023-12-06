@@ -13,12 +13,22 @@
 <!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-W9DDFMTC5E');
+	</script>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta >
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="shortcut icon" type="image/x-icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
 	<style>.home-slider, .testimonial-slider { display: none; }</style>
 	<?php wp_head(); ?>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-W9DDFMTC5E"></script>
 </head>
 
 <body <?php body_class(); ?>>
@@ -31,7 +41,7 @@
 			
 				<div class="header-contact">
 					<a class="ltgray-text" href="tel:<?php echo get_theme_mod( 'theme_company_phone' ); ?>"><i class="accent2-text fa fa-phone"></i> Call Us</a>
-					<a class="ltgray-text" href="mailto:contact@visionwebworks.com"><i class="accent2-text fa fa-envelope"></i> Email Us</a>
+					<a class="ltgray-text" href="mailto:contact@envisionwebmedia.com"><i class="accent2-text fa fa-envelope"></i> Email Us</a>
 				</div>
 
 				<div id="header-connect" class="header-connect">
@@ -45,7 +55,13 @@
 		<div class="main-header">
 			<div class="constrain">
 				<div class="site-branding">
+					<?php if( is_page( 'home' ) ) : ?>
+						<h1>
+							<a class="top-logo" style="background-image:url('<?php echo get_theme_mod( 'theme_logo' ); ?>');" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+						</h1>
+					<?php else : ?>
 						<a class="top-logo" style="background-image:url('<?php echo get_theme_mod( 'theme_logo' ); ?>');" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+					<?php endif; ?>
 				</div><!-- .site-branding -->
 
 				<nav id="site-navigation" class="main-navigation">

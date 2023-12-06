@@ -37,10 +37,10 @@
 								<span class="meta-info-title">Posted In:</span><ul class="meta-cat-list"><?php wp_list_categories( 'title_li=' ); ?></ul>
 							</div>
 							<div class="meta sharethis">
-								<span class="meta-info-title">Share:</span> <a class="social-icon facebook" href=""><i class="fa fa-facebook"></i></a>
-								<a class="social-icon twitter" href=""><i class="fa fa-twitter"></i></a>
-								<a class="social-icon linkedin" href=""><i class="fa fa-linkedin"></i></a>
-								<a class="social-icon email" href="mailto:contact@visionwebworks.com"><i class="fa fa-envelope"></i></a>
+								<span class="meta-info-title">Share:</span> <a class="social-icon facebook" href="https://www.facebook.com/sharer/sharer.php?u=<?php echo get_permalink(); ?>"><i class="fa fa-facebook"></i></a>
+								<a class="social-icon twitter" href="https://twitter.com/intent/tweet?text=<?php echo get_permalink(); ?>"><i class="fa fa-twitter"></i></a>
+								<a class="social-icon linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=<?php echo get_permalink(); ?>"><i class="fa fa-linkedin"></i></a>
+								<a class="social-icon email" href="mailto:?subject=Envision%20Web%20Client&body=Check%20out%20this%20great%20article%20from%20Envision%20Web%20-%20<?php echo get_permalink(); ?>"><i class="fa fa-envelope"></i></a>
 							</div>
 						</div><!-- .entry-meta -->
 					</div>

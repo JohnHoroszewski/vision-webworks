@@ -35,7 +35,7 @@
 
 
             <div class="flexxed">
-                <?php query_posts( array( 'post_type' => 'client', 'showposts' => -1, 'order' => 'ASC' ) ); ?>
+                <?php query_posts( array( 'post_type' => 'client', 'showposts' => -1, 'order' => 'menu_order' ) ); ?>
                 <?php while ( have_posts() ) : the_post(); ?>
                     <div class="recent-work-item">
                         <?php the_post_thumbnail(); ?>
