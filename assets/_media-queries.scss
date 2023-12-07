@@ -179,6 +179,15 @@
     }
     
     // HOMEPAGE
+    .home .slick-slide {
+    
+        .buttons-wrapper {
+            flex-direction: row;
+            grid-gap: 15px;
+        }
+    }
+
+
     .industries-list {
 
         ul {
@@ -259,6 +268,11 @@
 }
 
 @media only screen and ( min-width: 640px ) {
+
+    // HEADER
+    .cta-free-call {
+        display: inline-block;
+    }
 
     // CTA-MODULE
     .cta-module {
@@ -921,9 +935,17 @@
     }
 
     // HEADER
+    .main-header {
+        padding: 27px 0;
+    }
+
     .site-branding {
         display: inline-block;
         width: auto;
+
+        h1 {
+            margin: 0;
+        }
     }
 
     .main-navigation {
@@ -934,7 +956,7 @@
 
         li a {
             color: $dkgray;
-            padding: 0 11px;
+            padding: 0 9px;
             text-transform: uppercase;
 
             &:hover {
@@ -1557,6 +1579,15 @@
 }
 
 @media only screen and ( min-width: 1200px ) {
+
+    // HEADER
+    .main-header {
+        padding: 35px 0;
+    }
+
+    .site-content {
+        padding-top: 35px;
+    }
 
     // CTA-MODULE
     .cta-content {

@@ -196,6 +196,11 @@
         width: 100%;
         height: auto;
     }
+
+    .buttons-wrapper {
+        display: flex;
+        grid-gap: 15px;
+    }
 }
 
 .slide-content {
@@ -243,6 +248,7 @@
 
         a:hover {
             background-color: $accent;
+            color: $lightest;
         }
     }
 }
@@ -539,6 +545,10 @@
         border-radius: $radius;
         color: $lightest;
         padding: 10px;
+
+        p {
+            width: 100%;
+        }
     }
 
     input, select {
@@ -587,8 +597,12 @@
 
         &:nth-of-type( odd ) {
         
+            h2 a {
+                color: $accent;
+            }
+
             .btn-lg {
-                background-color: $dkgray;
+                background-color: $dkaccent;
             }
         }
     }

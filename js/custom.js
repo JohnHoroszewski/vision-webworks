@@ -4,7 +4,10 @@ jQuery( document ).ready( function( $ ){
     $connect = $( '.header-connect' ),
     $connectA = $( '#connect-open' );
   
-    $( '.home-slider' ).slick();
+    $( '.home-slider' ).slick({
+        autoplay: true,
+        autoplaySpeed: 3500,
+    });
 
     $( '.testimonial-slider' ).slick({
         arrows: false,

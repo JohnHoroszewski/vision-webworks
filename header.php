@@ -40,14 +40,14 @@
 			<div class="constrain">
 			
 				<div class="header-contact">
-					<a class="ltgray-text" href="tel:<?php echo get_theme_mod( 'theme_company_phone' ); ?>"><i class="accent2-text fa fa-phone"></i> Call Us</a>
 					<a class="ltgray-text" href="mailto:contact@envisionwebmedia.com"><i class="accent2-text fa fa-envelope"></i> Email Us</a>
 				</div>
 
 				<div id="header-connect" class="header-connect">
-					<a id="connect-open" class="social-icon" href="#"><i class="fa fa-ellipsis-h"></i></a>
+					<a class="ltgray-text" href="tel:<?php echo get_theme_mod( 'theme_company_phone' ); ?>"><span class="cta-free-call">Get a FREE Estimate</span> <i class="accent2-text fa fa-phone"></i> <?php echo get_theme_mod( 'theme_company_phone' ); ?></a>
+					<!-- <a id="connect-open" class="social-icon" href="#"><i class="fa fa-ellipsis-h"></i></a>
 					<?php social_media_list(); ?>
-					<a class="ltgray-text clogin" href="/wp-admin">Client Login</a>
+					<a class="ltgray-text clogin" href="/wp-admin">Client Login</a> -->
 				</div>
 
 			</div><!-- .contstrain -->

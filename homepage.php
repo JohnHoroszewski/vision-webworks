@@ -22,16 +22,27 @@ get_header(); ?>
                             <div class="slide-image">
                                 <img src="<?php echo $sImage[ 'url' ] ?>" alt="<?php echo $sImage[ 'alt' ] ?>">
                             </div>
-                            <div class="slide-content">
+                            <?php if ( get_field( 'default_home_slider_bg', 'options' ) ) : ?>
+                                <div class="slide-content" style="background-image:url( '<?php the_field( 'default_home_slider_bg', 'options' ); ?>' );background-position:center center; background-size:cover;">
+                            <?php else : ?>
+                                <div class="slide-content">
+                            <?php endif; ?>
                                 <div class="slide-text-wrapper">
                                     <h2><?php the_sub_field( 'slide_heading' ); ?></h2>
                                     <div class="slide-text">
                                         <div class="text">
                                             <?php the_sub_field( 'slide_content' ); ?>
                                         </div>
-                                        <?php if ( get_sub_field( 'slide_cta_text' ) ) : ?>
-                                            <a class="<?php the_sub_field( 'slide_cta_color' ); ?> <?php the_sub_field( 'slide_cta_style' ); ?> btn-md" href="<?php the_sub_field( 'slide_cta_url' ); ?>"><?php the_sub_field( 'slide_cta_text' ); ?></a>
+
+                                        <?php if ( have_rows( 'slide_buttons' ) ) : ?>
+                                            <div class="buttons-wrapper flexxed">
+                                                <?php while ( have_rows( 'slide_buttons' ) ) : the_row(); ?>
+                                                    <a class="<?php the_sub_field( 'slide_cta_color' ); ?> <?php the_sub_field( 'slide_cta_style' ); ?> btn-md" href="<?php the_sub_field( 'slide_cta_url' ); ?>"><?php the_sub_field( 'slide_cta_text' ); ?></a>
+                                                <?php endwhile; ?>
+                                            </div>
                                         <?php endif; ?>
+
+
                                     </div>
                                 </div>
                             </div>
